@@ -8,10 +8,7 @@ def decode(raw, manifest):
              {'kind':'manifest','id':index,'version':'received','refs':[],
               'payload':{'media_type':doc['mediaType']}}]
     for entry in doc['manifests']:
-        child=entry['digest'];blobs=[entry['config']]+entry['layers']
-        records.append({'kind':'platform','id':child,'version':index,'refs':[index]+blobs,
-                        'payload':entry['platform']})
-        for blob in blobs:
-            records.append({'kind':'blob','id':blob,'version':child,'refs':[child],
-                            'payload':{'downloaded':False}})
+        child=entry['digest']
+        records.append({'kind':'platform','id':child,'version':index,'refs':[index],
+                        'payload':{'platform':entry['platform'],'manifest_downloaded':False}})
     return {'protocol':manifest['protocol'],'collection':manifest['collection'],'records':records}

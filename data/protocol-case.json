@@ -6,8 +6,8 @@
   "assets": [
     {
       "path": "protocol-source.bin",
-      "bytes": 574,
-      "sha256": "ac762be9b32ac055d8eb488426679f5d12fb4a8a52450b15fb00f9acfa0f0760"
+      "bytes": 459,
+      "sha256": "6ab8f75f1e8e54630455ec10bfdf27818900c5e4b8408366d9a05a1d00e0e4d2"
     }
   ],
   "calls": []
