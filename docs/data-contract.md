@@ -4,3 +4,7 @@
 
 ## 已接收的协议资料
 现有入口保存 tag、index digest 与平台 manifest 的描述符。样例未取得平台 manifest 正文，因而不知道 config 与 layer 列表；这些 blob 尚不能进入引用图，更不能视为已下载或摘要已核验。
+
+同集合第二次来源接收保存在 data/conflict-case.json。冲突事务必须保持第一份收据和旧投影。 OCI 第二次 tag 解析改指新 digest，内容身份分别保留，未取得平台正文仍不得发布。
+
+同集合第二次来源接收保存在 data/conflict-case.json。冲突事务必须保持第一份收据和旧投影。 OCI 第二次 tag 解析改指新 digest，内容身份分别保留，未取得平台正文仍不得发布。
