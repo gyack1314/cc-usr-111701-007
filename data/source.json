@@ -1,0 +1,52 @@
+{
+  "protocol": "oci-registry",
+  "collection": "sample-007",
+  "records": [
+    {
+      "kind": "tag",
+      "id": "tag-1",
+      "version": "v1",
+      "refs": [],
+      "payload": {
+        "source": "synthetic",
+        "position": 0
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "manifest-2",
+      "version": "v1",
+      "refs": [
+        "tag-1"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 1
+      }
+    },
+    {
+      "kind": "blob",
+      "id": "blob-3",
+      "version": "v1",
+      "refs": [
+        "manifest-2"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 2
+      }
+    },
+    {
+      "kind": "platform",
+      "id": "platform-4",
+      "version": "v1",
+      "refs": [
+        "blob-3"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 3
+      }
+    }
+  ]
+}
