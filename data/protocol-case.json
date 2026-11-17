@@ -1,0 +1,14 @@
+{
+  "kind": "source-records",
+  "protocol": "oci-registry",
+  "collection": "protocol-sample",
+  "source_url": "https://registry.example.test/v2/team/app/manifests/stable",
+  "assets": [
+    {
+      "path": "protocol-source.bin",
+      "bytes": 574,
+      "sha256": "ac762be9b32ac055d8eb488426679f5d12fb4a8a52450b15fb00f9acfa0f0760"
+    }
+  ],
+  "calls": []
+}
